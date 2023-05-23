@@ -22,7 +22,7 @@ const initialState = {
       quantity: 10
     },
     {
-      name: "Apple",
+      name: "Bananas",
       category: ['food_grocery', 'pet_supplies'],
       description: "An apple to feed animals or humans.",
       price: 2,

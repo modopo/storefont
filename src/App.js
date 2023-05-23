@@ -4,7 +4,7 @@ import createStore from './store';
 import Header from './Components/Header';
 import Categories from './Components/Categories';
 import ActiveCategory from './Components/ActiveCategory';
-
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Header />
         <Categories />
         <ActiveCategory />
+        <Footer />
       </div>
     </Provider>
 
