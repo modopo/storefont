@@ -41,7 +41,7 @@ const initialState = {
 
 function productReducer(state = initialState, action) {
   switch (action.type) {
-    case "FILTER_TO_CATEGORY":
+    case "SELECTED_CATEGORY":
       return {
         ...state,
         productsToDisplay: state.allProducts.filter(prod => {

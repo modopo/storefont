@@ -16,8 +16,6 @@ export default function Categories() {
 
   let categories = useSelector((currentState) => currentState.categories.categories)
 
-  let display = useSelector((currentState) => currentState.products.productsToDisplay)
-
   const dispatch = useDispatch();
 
   const handleClick = (name) => {
@@ -25,14 +23,7 @@ export default function Categories() {
       type: 'SELECTED_CATEGORY',
       payload: name
     });
-
-    dispatch({
-      type: 'FILTER_TO_CATEGORY',
-      payload: name
-    })
   }
-
-  console.log(display);
 
   return (
     <Box sx={{ display: 'flex' }}>
