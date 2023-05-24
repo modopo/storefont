@@ -16,7 +16,6 @@ export default function Products() {
   return (
     <Grid container justifyContent="center" spacing={1} rowSpacing={1}>
       {activeCategory ? (
-        
         productsToDisplay.map(product => (
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -36,7 +35,7 @@ export default function Products() {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary">
-                Share
+                Add to cart
               </Button>
             </CardActions>
           </Card>

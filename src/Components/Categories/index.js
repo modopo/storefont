@@ -37,16 +37,12 @@ export default function Categories() {
   return (
     <Box sx={{ display: 'flex' }}>
       <Drawer
+        variant="permanent"
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          '& .MuiDrawer-paper': {
-            width: drawerWidth,
-            boxSizing: 'border-box',
-          },
+          [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
         }}
-        variant="permanent"
-        anchor="left"
       >
         <Toolbar />
         <Divider />
