@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
+import Cart from '../Cart';
 
 export default function Header() {
   return (
@@ -15,7 +15,7 @@ export default function Header() {
           <Typography variant="h6" component="div">
             Storefront
           </Typography>
-          <Button color="inherit">Cart ()</Button>
+          <Cart />
         </Toolbar>
       </AppBar>
     </Box>

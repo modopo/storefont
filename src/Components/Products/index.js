@@ -22,8 +22,6 @@ export default function Products() {
     })
   }
 
-  console.log(cart);
-
   return (
     <Grid container justifyContent="center" spacing={1} rowSpacing={1}>
       {activeCategory ? (
