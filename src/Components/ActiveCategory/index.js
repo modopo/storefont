@@ -17,7 +17,6 @@ export default function ActiveCategory() {
         {categories.activeCategory}
       </Typography>
       <Products />
-
     </Box>
   )
 }

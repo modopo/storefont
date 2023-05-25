@@ -28,11 +28,11 @@ function cartReducer(state = initialState, action) {
       }
 
     case "REMOVE_FROM_CART":
-      idx = state.inCart.findIndex(elem => elem.name === action.payload);
-      let countToRemove = state.inCart[idx].count;
+      let remove = state.inCart.findIndex(elem => elem.name === action.payload.name);
+      let countToRemove = state.inCart[remove].count;
 
       return {
-        inCart: state.inCart.splice(idx, 1),
+        inCart: state.inCart.splice(remove, 1),
         totaCount: state.totalCount - countToRemove
       }
 
